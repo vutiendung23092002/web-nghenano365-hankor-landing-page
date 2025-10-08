@@ -77,7 +77,8 @@
                 <a href="#how" class="hover:text-primary">Công dụng & Hướng dẫn sử dụng</a>
                 <a href="#test-results" class="hover:text-primary">Kết quả kiểm nghiệm</a>
                 <a href="#promo" class="hover:text-primary">Khuyến mãi</a>
-                <a href="#order" class="hidden lg:inline-block bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-accent transition">
+                <a href="#order"
+                    class="hidden lg:inline-block bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-accent transition">
                     Đặt hàng
                 </a>
             </nav>
@@ -246,6 +247,30 @@
                     <img src="./images/feedback/group-25-20250221124556-oqemu.webp" alt="">
                 </div>
             </div>
+
+            <div class="grid grid-cols-1 gap-6 place-items-center max-w-6xl mx-auto bg-cream py-6 rounded-2xl">
+                <img class="w-2/3 md:w-auto" src="./images/feedback/group-27-20250221125705-kiv7k.png"
+                    alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+
+                <div class="grid grid-cols-4 gap-1 px-1">
+                    <img src="./images/feedback/group-28-20250221125751-w9nrx.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-29-20250221125751-9lsea.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-30-20250221125751-ym1h4.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-31-20250221125751-hsw-c.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-32-20250221125750-y-io6.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-33-20250221125751-t-jve.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-34-20250221125751-v5wvs.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                    <img src="./images/feedback/group-35-20250221125751-icplf.png"
+                        alt="Sự lựa chọn hàng đầu của người nổi tiếng">
+                </div>
+            </div>
         </section>
 
         <!-- PROMO + ORDER -->
@@ -296,7 +321,6 @@
                 </aside>
             </div>
         </section>
-
 
     </main>
 
@@ -351,13 +375,11 @@
     </script>
 
     <script>
-        // Mobile menu toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
 
         menuBtn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
-            // Đổi icon ☰ ↔ ✕
             if (menu.classList.contains('hidden')) {
                 menuBtn.textContent = '☰';
             } else {
@@ -365,7 +387,6 @@
             }
         });
 
-        // Tự đóng menu khi click link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
