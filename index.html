@@ -64,21 +64,39 @@
     <!-- HEADER -->
     <header id="site-header" class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 transition-all duration-300">
         <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+            <!-- Logo -->
             <div class="flex items-center gap-2 font-bold text-lg text-gray-800">
                 <span
                     class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-[textGlow_2s_ease-in-out_infinite] font-extrabold tracking-wide">
-                    Nghệ Nano 365 - Hamin Bio
+                    Hamin Bio
                 </span>
             </div>
+
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-600">
                 <a href="#how" class="hover:text-primary">Công dụng & Hướng dẫn sử dụng</a>
                 <a href="#test-results" class="hover:text-primary">Kết quả kiểm nghiệm</a>
                 <a href="#promo" class="hover:text-primary">Khuyến mãi</a>
-                <a href="#order"
-                    class="bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-accent transition">Đặt hàng</a>
+                <a href="#order" class="hidden lg:inline-block bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-accent transition">
+                    Đặt hàng
+                </a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                ☰
+            </button>
         </div>
+
+        <!-- Mobile Nav Menu -->
+        <nav id="mobile-menu"
+            class="hidden flex-col items-start bg-white border-t shadow-lg md:hidden text-gray-700 text-sm font-semibold px-6 py-4 space-y-3">
+            <a href="#how" class="block hover:text-primary">Công dụng & Hướng dẫn sử dụng</a>
+            <a href="#test-results" class="block hover:text-primary">Kết quả kiểm nghiệm</a>
+            <a href="#promo" class="block hover:text-primary">Khuyến mãi</a>
+        </nav>
     </header>
+
 
     <main class="pt-14">
 
@@ -139,7 +157,7 @@
         <section id="test-results" class="mx-auto py-6 px-6 max-w-6xl">
             <h3 class="text-2xl md:text-3xl font-extrabold text-accent mb-8">Kết quả kiểm nghiệm</h3>
 
-            <!-- 🖥️ Grid layout for desktop -->
+            <!-- Grid layout for desktop -->
             <div class="hidden md:grid grid-cols-3 gap-6">
                 <div class="bg-white p-4 rounded-lg shadow-sm border">
                     <img src="./images/cer/1-20250221123955-ssmtg.png" alt="Chứng nhận 1"
@@ -167,9 +185,8 @@
                 </div>
             </div>
 
-            <!-- 📱 Mobile slider -->
+            <!-- Mobile slider -->
             <div class="relative overflow-hidden rounded-2xl border shadow-sm md:hidden mt-4">
-                <!-- Slide wrapper -->
                 <div id="slideTrack" class="flex transition-transform duration-700 ease-in-out">
                     <div class="min-w-full flex justify-center bg-white p-6">
                         <img src="./images/cer/1-20250221123955-ssmtg.png"
@@ -224,41 +241,9 @@
             <div class="max-w-6xl mx-auto">
                 <h3 class="text-2xl md:text-3xl font-extrabold text-accent mb-8">Phản hồi từ khách hàng</h3>
 
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white border rounded-xl p-5 shadow-sm text-left">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
-                            <div>
-                                <strong>Nguyễn A</strong><br>
-                                <span class="text-sm text-gray-500">Hà Nội</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 text-sm">“Sau 2 tuần dùng, dạ dày mình ổn hơn và da có sáng hơn
-                            một chút. Giao hàng nhanh!”</p>
-                    </div>
-
-                    <div class="bg-white border rounded-xl p-5 shadow-sm text-left">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
-                            <div>
-                                <strong>Trần B</strong><br>
-                                <span class="text-sm text-gray-500">TP. Hồ Chí Minh</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 text-sm">“Sản phẩm dễ uống, mùi nhẹ. Mình dùng buổi sáng thấy
-                            tốt.”</p>
-                    </div>
-
-                    <div class="bg-white border rounded-xl p-5 shadow-sm text-left">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
-                            <div>
-                                <strong>Hoàng C</strong><br>
-                                <span class="text-sm text-gray-500">Đà Nẵng</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 text-sm">“Đóng gói đẹp, quà tặng giá trị. Sẽ mua lại.”</p>
-                    </div>
+                <div class="grid grid-cols-[45%_50%] items-start gap-[5%]">
+                    <img src="./images/feedback/group-26-20250221124558-q3ifb.webp" alt="">
+                    <img src="./images/feedback/group-25-20250221124556-oqemu.webp" alt="">
                 </div>
             </div>
         </section>
@@ -275,15 +260,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-[50%_45%] items-start gap-[5%]">
 
-                <div class="reactive bg-white/70 text-gray-700">
-                    <div class="absolute">
-                        <h3 class="text-accent font-extrabold">
-                            <span class="text-2xl md:text-3xl">ƯU ĐÃI</span>
-                            <span>ĐẶC BIỆT</span>
-                        </h3>
-                    </div>
-                    <img class="rounded-xl shadow-sm" src="./images/promo (2).webp" alt="promo (2).webp">
-                </div>
+                <img class="w-full rounded-xl shadow-sm" src="./images/promo-2.webp" alt="promo-2.webp">
 
                 <aside id="order" class="bg-white border rounded-2xl p-5 shadow-md">
                     <h4 class="font-bold text-lg mb-1">Đặt hàng ngay</h4>
@@ -351,13 +328,6 @@
             alert(`Cảm ơn ${name}! Đơn hàng của bạn đã được ghi nhận.`);
             e.target.reset();
         }
-
-        // Header scroll shrink
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('site-header');
-            if (window.scrollY > 20) header.classList.add('py-1', 'shadow-md');
-            else header.classList.remove('py-1', 'shadow-md');
-        });
     </script>
 
     <script>
@@ -377,8 +347,31 @@
         document.getElementById('nextBtn').addEventListener('click', () => updateSlide(index + 1));
         dots.forEach((dot, i) => dot.addEventListener('click', () => updateSlide(i)));
 
-        // Auto-slide every 5s
         setInterval(() => updateSlide(index + 1), 5000);
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            // Đổi icon ☰ ↔ ✕
+            if (menu.classList.contains('hidden')) {
+                menuBtn.textContent = '☰';
+            } else {
+                menuBtn.textContent = '✕';
+            }
+        });
+
+        // Tự đóng menu khi click link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuBtn.textContent = '☰';
+            });
+        });
     </script>
 
 </body>
